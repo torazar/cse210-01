@@ -24,6 +24,10 @@ while(true){
  string inputChoice =Console.ReadLine();
 Console.WriteLine(" ");
 int change = int.Parse(inputChoice)-1;
+if(Grid[change] == turn){
+    Console.WriteLine("That isn't how you play!");
+    break;
+}
 Grid[change] = turn;
 if(turn =='x'){
     turn = 'O';
