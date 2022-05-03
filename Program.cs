@@ -38,6 +38,7 @@ else{
 bool condition = false;
 condition = checkGrid(Grid);
 if(condition == true){
+    displayGrid(Grid);
     Console.WriteLine("Thanks for playing!");
     break;
 }
